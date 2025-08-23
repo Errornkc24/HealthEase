@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Theme backgrounds */
+.theme-light {
+  --color-primary: #1976d2;
+  --color-secondary: #00bcd4;
+  --color-success: #43a047;
+  --color-error: #d32f2f;
+  --color-bg: #f4f6f8;
+  --color-text: #222;
+  --color-text-secondary: #555;
+  --color-patient: #1976d2;
+  --color-doctor: #00bcd4;
+  --color-diagnostic: #43a047;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+.theme-gradient {
+  --color-primary: #1976d2;
+  --color-secondary: #00bcd4;
+  --color-success: #43a047;
+  --color-error: #d32f2f;
+  --color-bg: linear-gradient(140deg, #8bb6f9 0%, #6be7c1 50%, #e6b6ff 100%);
+  --color-text: #222;
+  --color-text-secondary: #555;
+  --color-patient: #1976d2;
+  --color-doctor: #00bcd4;
+  --color-diagnostic: #43a047;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Ensure full height for background */
+.theme-light, .theme-gradient {
+  min-height: 100vh;
+  width: 100vw;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Utility classes for text and backgrounds */
+.text-primary { color: var(--color-primary) !important; }
+.text-secondary { color: var(--color-secondary) !important; }
+.text-success { color: var(--color-success) !important; }
+.text-error { color: var(--color-error) !important; }
+.text-main { color: var(--color-text) !important; }
+.text-secondary-main { color: var(--color-text-secondary) !important; }
+.bg-primary { background: var(--color-primary) !important; color: #fff !important; }
+.bg-secondary { background: var(--color-secondary) !important; color: #fff !important; }
+.bg-success { background: var(--color-success) !important; color: #fff !important; }
+.bg-error { background: var(--color-error) !important; color: #fff !important; }
+
+/* Utility classes for role-based colors */
+.text-patient { color: var(--color-patient) !important; }
+.text-doctor { color: var(--color-doctor) !important; }
+.text-diagnostic { color: var(--color-diagnostic) !important; }
+.bg-patient { background: var(--color-patient) !important; color: #fff !important; }
+.bg-doctor { background: var(--color-doctor) !important; color: #fff !important; }
+.bg-diagnostic { background: var(--color-diagnostic) !important; color: #fff !important; }
